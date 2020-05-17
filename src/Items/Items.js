@@ -5,9 +5,9 @@ import "./Items.css";
 function Items() {
   return (
     <ul className="Items">
-      <Item />
-      <Item />
-      <Item />
+      <Item completed>Finish homework</Item>
+      <Item completed>Cook a dinner</Item>
+      <Item>Fix the car</Item>
     </ul>
   );
 }

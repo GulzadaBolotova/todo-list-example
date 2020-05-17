@@ -1,10 +1,14 @@
 import React from "react";
 import "./Item.css";
 
-function Item() {
+function Item(props) {
+  const classes = ["Item"];
+  if (props.completed) {
+    classes.push("completed");
+  }
   return (
-    <li className="Item completed">
-      <span>Finish homework</span>
+    <li className={classes.join(" ")}>
+      <span>{props.children}</span>
       <button>x</button>
     </li>
   );
