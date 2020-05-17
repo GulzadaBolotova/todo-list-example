@@ -3,7 +3,7 @@ import "./NewItem.css";
 
 function NewItem() {
   return (
-    <div>
+    <div className="NewItem">
       <input type="text" placeholder="Ex: Finish homework" />
       <button>Add</button>
     </div>

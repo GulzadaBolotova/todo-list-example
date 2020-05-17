@@ -4,7 +4,7 @@ import "./Items.css";
 
 function Items() {
   return (
-    <ul>
+    <ul className="Items">
       <Item />
       <Item />
       <Item />

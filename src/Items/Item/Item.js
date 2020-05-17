@@ -3,7 +3,7 @@ import "./Item.css";
 
 function Item() {
   return (
-    <li className="completed">
+    <li className="Item completed">
       <span>Finish homework</span>
       <button>x</button>
     </li>
