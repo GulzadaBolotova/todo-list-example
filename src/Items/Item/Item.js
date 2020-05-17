@@ -9,7 +9,7 @@ function Item(props) {
   return (
     <li className={classes.join(" ")}>
       <span>{props.children}</span>
-      <button>x</button>
+      <button onClick={props.deleteItem}>x</button>
     </li>
   );
 }

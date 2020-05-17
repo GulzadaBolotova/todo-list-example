@@ -3,8 +3,10 @@ import Item from "./Item/Item";
 import "./Items.css";
 
 function Items(props) {
-  const itemsOutput = props.items.map(item => (
-    <Item completed={item.completed}>{item.text}</Item>
+  const itemsOutput = props.items.map((item, index) => (
+    <Item deleteItem={() => props.deleteItem(index)} completed={item.completed}>
+      {item.text}
+    </Item>
   ));
   return <ul className="Items">{itemsOutput}</ul>;
 }

@@ -15,10 +15,15 @@ function App() {
     newItems.push({ text: value, completed: false });
     setItems(newItems);
   }
+  function deleteItem(index) {
+    const newItems = [...items];
+    newItems.splice(index, 1);
+    setItems(newItems);
+  }
   return (
     <div className="App">
       <NewItem addItem={addItem} />
-      <Items items={items} />
+      <Items items={items} deleteItem={deleteItem} />
     </div>
   );
 }
