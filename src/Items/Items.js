@@ -5,6 +5,7 @@ import "./Items.css";
 function Items(props) {
   const itemsOutput = props.items.map((item, index) => (
     <Item
+      key={index}
       toggleItem={() => props.toggleItem(index)}
       deleteItem={() => props.deleteItem(index)}
       completed={item.completed}

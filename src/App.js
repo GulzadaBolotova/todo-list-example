@@ -27,6 +27,7 @@ function App() {
   }
   return (
     <div className="App">
+      <h1>TO DO</h1>
       <NewItem addItem={addItem} />
       <Items items={items} toggleItem={toggleItem} deleteItem={deleteItem} />
     </div>
