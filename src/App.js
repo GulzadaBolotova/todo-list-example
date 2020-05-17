@@ -10,10 +10,14 @@ function App() {
     { text: "Fix the car", completed: true },
     { text: "Do the laundry", completed: false }
   ]);
-
+  function addItem(value) {
+    const newItems = [...items];
+    newItems.push({ text: value, completed: false });
+    setItems(newItems);
+  }
   return (
     <div className="App">
-      <NewItem />
+      <NewItem addItem={addItem} />
       <Items items={items} />
     </div>
   );
