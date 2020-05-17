@@ -4,7 +4,11 @@ import "./Items.css";
 
 function Items(props) {
   const itemsOutput = props.items.map((item, index) => (
-    <Item deleteItem={() => props.deleteItem(index)} completed={item.completed}>
+    <Item
+      toggleItem={() => props.toggleItem(index)}
+      deleteItem={() => props.deleteItem(index)}
+      completed={item.completed}
+    >
       {item.text}
     </Item>
   ));

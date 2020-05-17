@@ -8,7 +8,7 @@ function Item(props) {
   }
   return (
     <li className={classes.join(" ")}>
-      <span>{props.children}</span>
+      <span onClick={props.toggleItem}>{props.children}</span>
       <button onClick={props.deleteItem}>x</button>
     </li>
   );

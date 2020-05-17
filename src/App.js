@@ -20,10 +20,15 @@ function App() {
     newItems.splice(index, 1);
     setItems(newItems);
   }
+  function toggleItem(index) {
+    const newItems = [...items];
+    newItems[index].completed = !newItems[index].completed;
+    setItems(newItems);
+  }
   return (
     <div className="App">
       <NewItem addItem={addItem} />
-      <Items items={items} deleteItem={deleteItem} />
+      <Items items={items} toggleItem={toggleItem} deleteItem={deleteItem} />
     </div>
   );
 }
