@@ -1,0 +1,32 @@
+.Item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 1.5em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.Item:last-child {
+  border: none;
+  padding-bottom: 1em;
+}
+.Item:first-child {
+  padding-top: 1em;
+}
+.Item span {
+  width: 100%;
+  font-size: 1.2rem;
+}
+.Item:hover {
+  background-color: lightgreen;
+}
+.Item button {
+  background-color: transparent;
+  font-size: 1em;
+
+  color: lightgreen;
+  border: none;
+  border-radius: 1em;
+}
+
+.Item.completed span {
+  text-decoration: line-through;
+}
