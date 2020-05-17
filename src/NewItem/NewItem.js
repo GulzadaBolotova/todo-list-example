@@ -7,7 +7,10 @@ function NewItem(props) {
     setValue(event.target.value);
   }
   function addItem() {
-    props.addItem(value);
+    if (value.length >= 3) {
+      setValue("");
+      props.addItem(value);
+    }
   }
   return (
     <div className="NewItem">
