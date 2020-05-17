@@ -3,13 +3,16 @@ import Item from "./Item/Item";
 import "./Items.css";
 
 function Items() {
-  return (
-    <ul className="Items">
-      <Item completed>Finish homework</Item>
-      <Item completed>Cook a dinner</Item>
-      <Item>Fix the car</Item>
-    </ul>
-  );
+  const Items = [
+    { text: "Finish homework", completed: true },
+    { text: "Cook a dinner", completed: false },
+    { text: "Fix the car", completed: true },
+    { text: "Do the laundry", completed: false }
+  ];
+  const itemsOutput = items.map(item => (
+    <Item completed={item.completed}>{item.text}</Item>
+  ));
+  return <ul className="Items">{itemsOutput}</ul>;
 }
 
 export default Items;
