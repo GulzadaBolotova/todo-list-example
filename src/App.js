@@ -1,11 +1,14 @@
 import React from "react";
+import NewItem from "./NewItem/NewItem";
+import Items from "./Items/Items";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      Hello World
-      </div>
-  )
+      <NewItem />
+      <Items />
+    </div>
+  );
 }
-export default App
+export default App;
