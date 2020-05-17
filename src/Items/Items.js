@@ -3,7 +3,7 @@ import Item from "./Item/Item";
 import "./Items.css";
 
 function Items() {
-  const Items = [
+  const items = [
     { text: "Finish homework", completed: true },
     { text: "Cook a dinner", completed: false },
     { text: "Fix the car", completed: true },
